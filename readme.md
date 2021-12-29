@@ -1,17 +1,24 @@
-# Clipboard-sync / socket-server
+# ClipboardSync / 剪贴板同步
 
-```
-Server: sock.mysocket.online
-Port: 3000
-protocal: ws
-```
+[桌面端](https://github.com/clipboard-sync/client-desktop)  | [安卓端](https://github.com/clipboard-sync/client-rn) | 服务端  
+
+
+**一款简单的剪贴板同步工具**
+
+## 功能
+
+- 基于 socket.io 的服务端，完成 socket 数据转发
+
+公开的 socket 服务地址：  
+- http://sock.mysocket.online:3000
 
 ## 使用方式
 
-使用 `socket.io-client` 建立连接后， `io.emit("join", CHANNEL)` 加入频道
-`io.emit("data", DATA )` 向频道广播
+- 使用 `socket.io-client` 建立连接后  
+- `io.emit("join", CHANNEL)` 加入频道  
+- `io.emit("data", DATA )` 向频道广播  
 
-## 为自己部署
+## 私有部署
 
 ### Docker
 
@@ -31,3 +38,8 @@ docker run -d -p 3000:3000 --name socket-server socket-server:latest
 ```
 
 随后将`Client`端的服务器地址修改为`http://运行Docker的主机地址:3000`即可。
+
+## License
+
+MIT
+
