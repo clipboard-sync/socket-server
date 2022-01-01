@@ -8,11 +8,52 @@
 ## 功能
 
 - 基于 socket.io 的服务端，完成 socket 数据转发
+- 提供了 npm 包 [clipboard-socket](https://www.npmjs.com/package/clipboard-socket)
 
 公开的 socket 服务地址：  
 - http://sock.mysocket.online:3000
 
 ## 使用方式
+
+### 使用 NPX 启动
+
+使用 `npx` 直接启动
+```bash
+## 将 80 替换成你需要的端口
+npx clipboard-socket 80
+```
+### clone 代码并运行
+
+```bash
+
+# clone
+git clone https://github.com/clipboard-sync/socket-server.git
+# cd dir
+cd socket-server
+# install dependencies
+npm i 
+
+## 1. use pm2
+npm run start
+## 2. use node
+node index.js
+```
+
+### 作为 JS 模块使用
+npm install:
+```bash
+npm i clipboard-socket
+```
+use in code:
+```js
+const Socket = require("clipboard-socket");
+let s = new Socket(3000);
+console.log(s.io); // s.io 是 socket.io-server 实例
+
+```
+
+
+## 模块功能
 
 - 使用 `socket.io-client` 建立连接后  
 - `io.emit("join", CHANNEL)` 加入频道  
