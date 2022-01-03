@@ -11,7 +11,7 @@
 - 提供了 npm 包 [clipboard-socket](https://www.npmjs.com/package/clipboard-socket)
 
 公开的 socket 服务地址：  
-- http://sock.mysocket.online:3000
+- http://socket.interface.work:3000
 
 ## 使用方式
 
