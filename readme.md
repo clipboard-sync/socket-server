@@ -1,6 +1,6 @@
 # ClipboardSync / 剪贴板同步
 
-[桌面端](https://github.com/clipboard-sync/client-desktop)  | [安卓端](https://github.com/clipboard-sync/client-rn) | 服务端  
+[桌面端](https://github.com/clipboard-sync/client-desktop#clipboardsync--剪贴板同步)  | [安卓端](https://github.com/clipboard-sync/client-rn#clipboardsync--剪贴板同步) | 服务端  
 
 
 **一款简单的剪贴板同步工具**
