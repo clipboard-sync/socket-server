@@ -16,4 +16,4 @@ COPY . .
 EXPOSE 3000
 
 # 设置 entrypoint
-ENTRYPOINT [ "npm", "start" ]
+ENTRYPOINT [ "node", "index.js" ]

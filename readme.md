@@ -61,7 +61,15 @@ console.log(s.io); // s.io 是 socket.io-server 实例
 
 ## 私有部署
 
-### Docker
+
+### DockerHub
+
+> DockerHub Image 由 GithubAction 进行更新，Expose 3000 端口
+
+Image: [mscststs/clipboard-sync-socket-server](https://hub.docker.com/r/mscststs/clipboard-sync-socket-server/tags)
+
+
+### 本地编译
 
 请先确保您***已经安装了`Docker`***。
 
