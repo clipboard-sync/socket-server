@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # 安装 Node.js 依赖项
-RUN npm install
+RUN npm ci
 
 # 将整个项目文件夹复制到容器中
 COPY . .
